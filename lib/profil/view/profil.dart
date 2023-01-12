@@ -1,10 +1,11 @@
 import 'dart:io';
-import 'dart:ui';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:todo/shared_prefirepo/shared_prefirepo.dart';
 
 class Profil extends StatelessWidget {
   Profil({super.key});
@@ -268,7 +269,11 @@ class Profil extends StatelessWidget {
                               style: ElevatedButton.styleFrom(
                                 backgroundColor: Colors.blue,
                               ),
-                              onPressed: () {},
+                              onPressed: () {
+                                //print(
+                                //    '------------------------',);
+                                SharedPerf().getUserData();
+                              },
                               child: const Text(
                                 'Logout',
                                 style: TextStyle(fontWeight: FontWeight.bold),
@@ -280,7 +285,7 @@ class Profil extends StatelessWidget {
                     ],
                   );
                 } else {
-                  return Center(child: CircularProgressIndicator());
+                  return const Center(child: CircularProgressIndicator());
                 }
               },
             ),

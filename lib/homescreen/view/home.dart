@@ -1,5 +1,3 @@
-// ignore_for_file: lines_longer_than_80_chars
-
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -25,7 +23,6 @@ class Home extends StatelessWidget {
             onPressed: () {
               Navigator.push(
                 context,
-                // ignore: inference_failure_on_instance_creation
                 MaterialPageRoute(
                   builder: (context) => Profil(),
                 ),
