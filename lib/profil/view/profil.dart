@@ -47,7 +47,6 @@ class Profil extends StatelessWidget {
                   print(userData['email'].toString());
                   // ignore: avoid_print
                   print(userData['userName'].toString());
-
                   return Column(
                     children: [
                       const Text(

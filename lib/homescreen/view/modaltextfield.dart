@@ -119,7 +119,7 @@ class ModalTextFiield extends StatelessWidget {
     var todoId = uuid.v4();
     final datetime = DateTime.now();
     final time = '${datetime.hour}:${datetime.minute}pm';
-    // print(date);
+    //print('tamds');
     try {
       await todoRef.doc(todoId).set({
         'todo name': name,
@@ -128,8 +128,6 @@ class ModalTextFiield extends StatelessWidget {
         'todo id': todoId,
         'date': time,
       });
-
-      // ignore: empty_catches
     } catch (e) {}
   }
 

@@ -23,7 +23,7 @@ class Home extends StatelessWidget {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(
+                MaterialPageRoute<dynamic>(
                   builder: (context) => Profil(),
                 ),
               );
@@ -92,7 +92,6 @@ class Home extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          // ignore: inference_failure_on_function_invocation
           showModalBottomSheet(
             isScrollControlled: true,
             context: context,
