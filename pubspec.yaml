@@ -14,7 +14,7 @@ dependencies:
   firebase_auth: ^4.1.0
   firebase_core: ^2.1.1
   firebase_messaging: ^14.1.4
-  firebase_storage: ^11.0.6
+  firebase_storage: ^11.0.15
   flutter:
     sdk: flutter
   flutter_bloc: ^8.1.1
